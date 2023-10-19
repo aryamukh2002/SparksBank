@@ -1,0 +1,84 @@
+body{
+   background-color: aliceblue;
+}
+h1{
+    margin-top: -10dvh;
+    font-size: xxx-large;
+    text-align: center;
+    color: #66ff99;
+}
+p{
+    text-align: center;
+    color: rgb(74, 82, 45);
+    
+    font-size: large;
+}
+
+.navbar-brand{
+    color: rgb(224, 201, 170);
+    font-family: 'Young Serif';
+}
+.navbar-nav .nav-link.active{
+    color: #d6a3c1;
+}
+.navbar-nav .nav-link{
+    color: #66ff99;
+    font-family: 'Young Serif';
+
+}
+.navbar-toggler{
+    background-color: beige;
+}
+.banner{
+    
+    background: #4f0430;
+    font-family: 'Young Serif';
+    justify-content: center;
+    align-items: center;
+    height: 110dvh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.image-container {
+    margin-top: -40dvh;
+    margin-left: 10dvw;
+    width: 40dvw; /* Set the desired width */
+    height: 80dvh; /* Set the desired height */
+    overflow: hidden; /* Hide any image content that exceeds the container */
+}
+.card-img-top{
+    height: 12dvw;
+    width: fit-content;
+    
+}
+.card{
+    background: #66ff99;
+    height: 45dvh;
+    align-items: center;
+}
+.image-content {
+    width: 100%;
+    height: 100%;
+    background-image: url('banner.jpg'); /* Set the image as background */
+    background-size: contain; /* Scale the background image to fit within the container */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-position: center center; /* Center the background image */
+}
+
+
+
+@media (max-width: 767px) {
+    .ad{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-container{
+        opacity: 0;
+    }
+}
